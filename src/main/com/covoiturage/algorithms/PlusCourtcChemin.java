@@ -86,8 +86,7 @@ public final class PlusCourtcChemin {
             return Double.NaN;
         }
         // Heuristique simple avec une vitesse moyenne de 40 km/h.
-        double distance = CalculDistance.calculateDistance(
-                from.getLatitude(), from.getLongitude(), to.getLatitude(), to.getLongitude());
+        double distance = CalculDistance.calculateDistance(from, to);
         double averageSpeedKmh = 40.0;
         return (distance / averageSpeedKmh) * 60.0;
     }
