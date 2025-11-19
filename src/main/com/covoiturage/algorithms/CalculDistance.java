@@ -1,4 +1,4 @@
-package java.com.covoiturage.algorithms;
+package com.covoiturage.algorithms;
 
 /**
  * Classe utilitaire contenant la formule de Haversine.

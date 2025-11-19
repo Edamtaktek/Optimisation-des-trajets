@@ -1,11 +1,11 @@
-package java.com.covoiturage.algorithms;
+package com.covoiturage.algorithms;
 
-import java.com.covoiturage.models.Noeud;
+import com.covoiturage.models.Noeud;
 
-import java.com.covoiturage.models.Liaison;
-import java.com.covoiturage.models.Graph;
-import java.com.covoiturage.models.NoeudDistance;
-import java.com.covoiturage.models.PathResult;
+import com.covoiturage.models.Liaison;
+import com.covoiturage.models.Graph;
+import com.covoiturage.models.NoeudDistance;
+import com.covoiturage.models.PathResult;
 import java.util.*;
 
 /**

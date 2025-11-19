@@ -1,4 +1,4 @@
-package java.com.covoiturage.models;
+package com.covoiturage.models;
 
 /**
  * Valeur utilitaire utilisée par la file de priorité durant l'algorithme de Dijkstra.
