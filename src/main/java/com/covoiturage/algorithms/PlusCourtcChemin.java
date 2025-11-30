@@ -1,11 +1,11 @@
-package java.com.covoiturage.algorithms;
+package com.covoiturage.algorithms;
 
-import java.com.covoiturage.models.Noeud;
+import com.covoiturage.models.Noeud;
 
-import java.com.covoiturage.models.Liaison;
-import java.com.covoiturage.models.Graph;
-import java.com.covoiturage.models.NoeudDistance;
-import java.com.covoiturage.models.PathResult;
+import com.covoiturage.models.Liaison;
+import com.covoiturage.models.Graph;
+import com.covoiturage.models.NoeudDistance;
+import com.covoiturage.models.PathResult;
 import java.util.*;
 
 /**
@@ -86,7 +86,7 @@ public final class PlusCourtcChemin {
             return Double.NaN;
         }
         // Heuristique simple avec une vitesse moyenne de 40 km/h.
-        double distance = CalculDistance.calculateDistance(
+        double distance = com.covoiturage.algorithms.CalculDistance.calculateDistance(
                 from.getLatitude(), from.getLongitude(), to.getLatitude(), to.getLongitude());
         double averageSpeedKmh = 40.0;
         return (distance / averageSpeedKmh) * 60.0;

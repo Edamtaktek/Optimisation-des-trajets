@@ -1,4 +1,4 @@
-package java.com.covoiturage.models;
+package com.covoiturage.models;
 
 import java.util.*;
 
