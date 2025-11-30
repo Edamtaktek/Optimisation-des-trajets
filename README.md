@@ -88,12 +88,13 @@ Voir db/schema.sql (MySQL 8). Tables: users, vehicles, trips, trip_passengers, a
 - GET /api/optimize/status/{jobId} -> { status: RUNNING|DONE|ERROR, result?: Trip[], conflicts?:[] }
 
 ## Intégration des algorithmes
-- Construction initiale: NearestNeighbor.constructInitial(users, vehicles)
-- Amélioration: InsertionHeuristic.improve(trips)
-- Optimisation globale: SimulatedAnnealing.optimize(trips)
-- Détection de conflits: ConflictDetector.detect(trips, vehicles)
+- **Construction initiale** : `NearestNeighbor.findRoute(graph, startNode, users)`
+- **Optimisation globale** : `RecuitSimule.optimizeRoute(graph, startNode, points)`
+- **Répartition intelligente** : `GestionnaireOptimisation.optimiserCovoiturage(graph, users, vehicles, capacities)`
+- **Détection de conflits** : `ConflictDetector.detecterConflits(graph, assignments, capacities)`
 
-Ces modules sont orchestrés par OptimizationService, exécuté de manière asynchrone via ExecutorService (pool fixe). Chaque exécution crée un jobId et peut être interrogée via OptimizationStatusServlet.
+Ces modules sont orchestrés par `OptimizationService`, exécuté de manière asynchrone via `ExecutorService` (pool fixe). Chaque exécution crée un `jobId` et peut être interrogée via `OptimizationStatusServlet`.
+
 
 ## Concurrence et exécutions longues
 - ExecutorService avec N threads (N = max(2, CPU/2)).
