@@ -1,8 +1,9 @@
 package com.covoiturage.algorithms;
 
-/**
- * Classe utilitaire contenant la formule de Haversine.
- */
+import com.covoiturage.models.Noeud;
+
+import java.util.Objects;
+
 public final class CalculDistance {
 
     private static final double EARTH_RADIUS_KM = 6371.0;
@@ -11,10 +12,15 @@ public final class CalculDistance {
 
     }
 
-    /**
-     * Calcule la distance en kilomètres entre deux coordonnées géographiques.
-     */
-    public static double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
+    public static double calculateDistance(Noeud depart, Noeud arrivee) {
+        Objects.requireNonNull(depart, "depart");
+        Objects.requireNonNull(arrivee, "arrivee");
+        return calculateDistance(
+                depart.getLatitude(), depart.getLongitude(),
+                arrivee.getLatitude(), arrivee.getLongitude());
+    }
+
+    private static double calculateDistance(double lat1, double lon1, double lat2, double lon2) {
         double lat1Rad = Math.toRadians(lat1);
         double lat2Rad = Math.toRadians(lat2);
         double deltaLat = Math.toRadians(lat2 - lat1);
