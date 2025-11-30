@@ -68,14 +68,14 @@ Modèles métier User/Vehicle/Trip      # Entités fonctionnelles
 ```
 Scénario de test : 5 utilisateurs, 2 véhicules (capacités 3+2)
 
-📍 CalculDistance → Distances géodésiques précises
-🗺️ PlusCourtChemin → Chemins optimaux garantis
-🎯 NearestNeighbor → Route initiale : 9.4 km
-🔥 RecuitSimulé → Optimisation : 7.8 km (-1.6 km, -17%)
-🤖 Gestionnaire → Répartition : 100% remplissage
-✅ ConflictDetector → Aucun conflit détecté
+ CalculDistance → Distances géodésiques précises
+️ PlusCourtChemin → Chemins optimaux garantis
+ NearestNeighbor → Route initiale : 9.4 km
+ RecuitSimulé → Optimisation : 7.8 km (-1.6 km, -17%)
+ Gestionnaire → Répartition : 100% remplissage
+ ConflictDetector → Aucun conflit détecté
 
-📈 RÉSULTAT FINAL : 5.8 km total - Solution optimale et validée
+ RÉSULTAT FINAL : 5.8 km total - Solution optimale et validée
 ```
 
 ## 🎯 Points Forts de l'Approche Équipe
@@ -83,18 +83,18 @@ Scénario de test : 5 utilisateurs, 2 véhicules (capacités 3+2)
 ### **Expertises Combinées**
 - **Adam Taktek** : Algorithmes exacts, théorie des graphes, précision mathématique, modélisation spatiale
 - **Khadija Kriaa** : Heuristiques avancées, optimisation stochastique, logique métier, validation système
-- **🏆 Ensemble** : Couverture complète du spectre algorithmique
+- **Ensemble** : Couverture complète du spectre algorithmique
 
 ### **Décisions Techniques Partagées**
-1. **✅ Choix Dijkstra** - Garantie d'optimalité des chemins 
-2. **✅ Recuit Simulé** - Optimisation globale efficace 
-3. **✅ Architecture Modulaire** - Extensibilité et maintenance 
-4. **✅ Validation Systématique** - Robustesse production 
+1.  **Choix Dijkstra** - Garantie d'optimalité des chemins 
+2. **Recuit Simulé** - Optimisation globale efficace 
+3. **Architecture Modulaire** - Extensibilité et maintenance 
+4. **Validation Systématique** - Robustesse production 
 
 
 
 
-## 🏆 Bilan de Collaboration
+##  Bilan de Collaboration
 
 **Cette approche partagée a permis de :**
 
@@ -103,9 +103,8 @@ Scénario de test : 5 utilisateurs, 2 véhicules (capacités 3+2)
 - **Renforcer la cohésion** d'équipe et la communication technique
 - **Élargir les compétences** mutuelles par partage de connaissances
 
-*📅 Dernière mise à jour : 30/11/2025*  
-*👥 Équipe Algorithmes : Khadija Kriaa + Adam Taktek*  
-*🏷️ Version : 1.0 - Module Algorithmes Complet*
+* Dernière mise à jour : 30/11/2025*
+* Version : 1.0 - Module Algorithmes Complet*
 ```
 
 
