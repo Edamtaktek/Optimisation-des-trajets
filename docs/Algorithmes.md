@@ -1,5 +1,8 @@
-```markdown
-Module d'Algorithmes d'Optimisation
+# 🧠 Module d'Algorithmes d'Optimisation
+
+Ce module implémente le cœur intelligent du système de covoiturage, combinant algorithmes de graphes, heuristiques de tournées et méta-heuristiques pour résoudre le problème complexe d'optimisation multi-véhicules avec contraintes de capacité.
+
+```
  Équipe Algorithmes
 - Khadija Kriaa : NearestNeighbor, RecuitSimulé, GestionnaireOptimisation, ConflictDetector, modèles User/Vehicle/Trip
 - Adam Taktek : CalculDistance, PlusCourtChemin, modèles Graph/Noeud/Liaison
