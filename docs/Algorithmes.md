@@ -103,8 +103,9 @@ Scénario de test : 5 utilisateurs, 2 véhicules (capacités 3+2)
 - **Renforcer la cohésion** d'équipe et la communication technique
 - **Élargir les compétences** mutuelles par partage de connaissances
 
-* Dernière mise à jour : 30/11/2025*
-* Version : 1.0 - Module Algorithmes Complet*
+**Dernière mise à jour**: 30/11/2025
+
+**Version : 1.0 - Module Algorithmes Complet**
 ```
 
 
